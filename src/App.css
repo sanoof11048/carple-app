@@ -1,0 +1,22 @@
+@import "tailwindcss";
+/* button {
+  color: #3a3a3a;                 
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+  color: #999999;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+ */
