@@ -86,7 +86,7 @@ const Navbar: React.FC = () => {
               : islandState === 'expanded' 
                 ? 'w-96 h-16' 
                 : 'w-[90vw] max-w-6xl h-20'
-          } bg-black/90 backdrop-blur-xl rounded-full border border-white/10 shadow-2xl`}
+          } bg-black/50 backdrop-blur-xl rounded-full border border-white/10 shadow-2xl`}
           onMouseEnter={() => {
             if (islandState === 'compact') {
               setIsExpanded(true);
@@ -305,7 +305,9 @@ const Navbar: React.FC = () => {
                       </button>
 
                       {showProfile && (
-                        <div className="absolute right-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-200 py-2 z-50 animate-in slide-in-from-top-2 duration-200">
+                        <div
+                        
+                        className="absolute right-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-200 py-2 z-50 animate-in slide-in-from-top-2 duration-200">
                           <div className="px-4 py-3 border-b border-gray-100">
                             <div className="flex items-center space-x-3">
                               <img
