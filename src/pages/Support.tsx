@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { MessageCircle, Phone, Mail, Search, Plus, Clock, CheckCircle } from 'lucide-react';
+import { MessageCircle, Phone, Mail, Search, Plus, Clock } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 interface SupportTicket {

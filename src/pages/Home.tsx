@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Car, Users, Shield, Star, MapPin, Clock, CreditCard, Phone, ArrowRight, Play, CheckCircle, Zap, Globe, Award } from 'lucide-react';
+import { Car, Users, Shield, Star, MapPin,  CreditCard, Phone, ArrowRight,  CheckCircle, Zap, Globe, Award } from 'lucide-react';
 
 const Home: React.FC = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);

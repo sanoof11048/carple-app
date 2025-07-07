@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Car, Menu, X, Bell, Wallet, User, LogOut, Search, ChevronDown } from 'lucide-react';
+import { Car, Menu, X, Bell, Wallet, User, LogOut, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Mock hooks for demo
@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+//   const [scrolled, setScrolled] = useState(false);
   const [islandState, setIslandState] = useState<'compact' | 'expanded' | 'full'>('full');
   const [currentPage, setCurrentPage] = useState('/');
   
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setScrolled(scrollY > 20);
+    //   setScrolled(scrollY > 20);
       
       // Dynamic island states based on scroll
       if (scrollY > 100) {
@@ -222,10 +222,7 @@ const Navbar: React.FC = () => {
               <div className="flex items-center space-x-4">
                 {isAuthenticated ? (
                   <>
-                    {/* Search */}
-                    <button className="p-3 rounded-full hover:bg-white/10 transition-colors group">
-                      <Search className="h-5 w-5 text-white/80 group-hover:text-white" />
-                    </button>
+                   
 
                     {/* Wallet */}
                     <Link 

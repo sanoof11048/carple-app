@@ -58,6 +58,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       id: '1',
       name: 'John Doe',
       email,
+      password,
       phone: '+1234567890',
       avatar: 'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400',
       isDriver: true,

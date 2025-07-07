@@ -9,11 +9,11 @@ import DriverBooking from './pages/DriverBooking';
 import PostRide from './pages/PostRide';
 import RideListings from './pages/RideListing';
 import Login from './pages/Login';
-import Signup from './pages/SignUp';
 import Wallet from './pages/Wallet';
 import Profile from './pages/Profile';
 import AdminPanel from './pages/AdminPanel';
 import Support from './pages/Support';
+import Signup from './pages/Signup';
 
 function App() {
   return (

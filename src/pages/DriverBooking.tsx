@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { MapPin, Calendar, Clock, Star, Shield, Check, Phone, Award, Users, Car, Filter, Search } from 'lucide-react';
+import { MapPin, Calendar, Clock, Star, Shield, Check, Phone, Award, Users, Car, Filter } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 interface BookingForm {
@@ -30,11 +30,11 @@ interface Driver {
 }
 
 const DriverBooking: React.FC = () => {
-  const [selectedDriver, setSelectedDriver] = useState<Driver | null>(null);
+//   const [selectedDriver, setSelectedDriver] = useState<Driver | null>(null);
   const [showFilters, setShowFilters] = useState(false);
   const [sortBy, setSortBy] = useState('rating');
   const [filterRating, setFilterRating] = useState(0);
-  const { register, handleSubmit, formState: { errors }, watch } = useForm<BookingForm>();
+  const { register, handleSubmit, formState: { errors } } = useForm<BookingForm>();
 
   const drivers: Driver[] = [
     {
@@ -93,7 +93,7 @@ const DriverBooking: React.FC = () => {
   };
 
   const handleBookDriver = (driver: Driver) => {
-    setSelectedDriver(driver);
+    // setSelectedDriver(driver);
     toast.success(`Driver ${driver.name} booked successfully! You'll receive confirmation shortly.`);
   };
 
@@ -112,7 +112,7 @@ const DriverBooking: React.FC = () => {
       }
     });
 
-  const watchedData = watch();
+//   const watchedData = watch();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-indigo-50 py-8">
